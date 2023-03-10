@@ -12,7 +12,9 @@ termina executia. Logica este urmatoarea: daca exista un duplicat al vreunui
 numar, atunci stiu sigur ca unul dintre numere lipseste de pe linie.
 
 2. Verificarea validitatii pe coloane
+
 2.1. Prima coloana
+
 Logica este aceeasi, caut numerele de la 1 la 4, iar daca unul dintre ele nu
 exista inseamna ca avem unul sau mai multe duplicate din celelalte numere. Ceea
 ce se schimba este parcurgerea. Prima coloana este reprezentata de primul
@@ -23,7 +25,9 @@ ea va fi "_" ceea ce inseana ca am ajuns la finalul primei coloane, deci
 numarul 1 lipseste din acea coloana => Masina Turing ajunge in starea N, unde
 isi termina executia. Daca nr 1 este gasit, Masina Turing se duce la inceputul
 inputului si se cauta in mod asemanator urmatoarele numere.
+
 2.2. A doua coloana
+
 A doua coloana este reprezentata de toate numerele care se afla inaintea 
 simbolului ":". Prima oara vom cauta nr 1. Parcurgem inputul pana la ":"
 si ne intoarcem cu o pozitie inapoi si verificam numarul. Daca nu este egal cu 1
@@ -32,7 +36,9 @@ atunci parcurgem inputul pana la urmatoarea "*", apoi pana la primul simbol
 Se repeta procedura pana ajungem la finalul inputului, "_", unde Masina intra in
 srarea N si isi termina executia, sau, daca numarul este gasit, ne intoarcem
 la inceputul inputului si cautam urmatorul numar in acelasi mod.
+
 2.3.-2.4. A treia si a patra coloana
+
 Dupa ce a doua coloana a fost verificata si a fost validata, se merge la finalul
 inputului si se verifica, pe rand, a patra coloana, apoi a treia coloana, 
 dupa cum urmeaza:
@@ -53,15 +59,20 @@ intoarcem la finalul inputului, altfel Msina intra in starea N.
 
 3. Verificarea validitatii pe regiuni
 regiuni:
+
 1 2
+
 4 3
 
 3.1. Regiunile 1 si 3
+
 -pentru regiunea 1 trebuie verificate, de la stanga la dreapta, cele 2 cifre
 aflate dupa primele 2 stelute("*").
 -pentru regiunea 3 trebuie verificate, de la dreapta la stanga, cele 2 cifre
 aflate dupa(la stanga) ultimele 2 stelute.
+
 3.2. Regiunile 2 si 4
+
 -pentru regiunea 2 trebuie verificate, de la stanga la dreapta, cele 2 cifre
 aflate dupa primele doua caractere ":".
 -pentru regiunea 4 trebuie verificate, de la dreapta la stanga, cele 2 cifre
